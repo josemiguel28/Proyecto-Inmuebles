@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E63E0E53-0E2F-4575-9D6F-BD91E47BBEA0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Proyecto.My.MyApplication</StartupObject>
+    <RootNamespace>Proyecto</RootNamespace>
+    <AssemblyName>Proyecto</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Proyecto.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Proyecto.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Compras.Designer.vb">
+      <DependentUpon>Compras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Compras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DataSet1.vb">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\fmrRoles.Designer.vb">
+      <DependentUpon>fmrRoles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\fmrRoles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Gestion Local.Designer.vb">
+      <DependentUpon>Gestion Local.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Gestion Local.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Gestion Pisos.Designer.vb">
+      <DependentUpon>Gestion Pisos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Gestion Pisos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Gestionar Inmuebles.Designer.vb">
+      <DependentUpon>Gestionar Inmuebles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Gestionar Inmuebles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Gestionar Personas.Designer.vb">
+      <DependentUpon>Gestionar Personas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Gestionar Personas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\GestionarEmpleados.Designer.vb">
+      <DependentUpon>GestionarEmpleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GestionarEmpleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\GestionClientes.Designer.vb">
+      <DependentUpon>GestionClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GestionClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\GestionDeAlquileres.Designer.vb">
+      <DependentUpon>GestionDeAlquileres.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GestionDeAlquileres.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\GestionGaraje.Designer.vb">
+      <DependentUpon>GestionGaraje.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GestionGaraje.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\GestionTipoUsuario.Designer.vb">
+      <DependentUpon>GestionTipoUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GestionTipoUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\GestionUsuarios.Designer.vb">
+      <DependentUpon>GestionUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GestionUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\UsuariosRol.Designer.vb">
+      <DependentUpon>UsuariosRol.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UsuariosRol.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alquileres1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>alquileres.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Bitacora.Designer.vb">
+      <DependentUpon>Bitacora.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bitacora.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\DetallesCompra.Designer.vb">
+      <DependentUpon>DetallesCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\DetallesCompra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\GestionAlquileresPagos.Designer.vb">
+      <DependentUpon>GestionAlquileresPagos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\GestionAlquileresPagos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\MenuC.Designer.vb">
+      <DependentUpon>MenuC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\MenuC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\PagoAlquiler.Designer.vb">
+      <DependentUpon>PagoAlquiler.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\PagoAlquiler.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\RealizarAlquiler.Designer.vb">
+      <DependentUpon>RealizarAlquiler.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\RealizarAlquiler.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\RealizarCompra.Designer.vb">
+      <DependentUpon>RealizarCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\RealizarCompra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaNO.vb" />
+    <Compile Include="Log In\Log In.Designer.vb">
+      <DependentUpon>Log In.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Log In\Log In.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Log In\Login.vb" />
+    <Compile Include="MenuA.Designer.vb">
+      <DependentUpon>MenuA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuAdmin.Designer.vb">
+      <DependentUpon>MenuAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuCliente.Designer.vb">
+      <DependentUpon>MenuCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MostrarInmuebleCompra.Designer.vb">
+      <DependentUpon>MostrarInmuebleCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarInmuebleCompra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="My Project\VALIDACION_IDPERSONA.vb" />
+    <Compile Include="TEMPFORM.Designer.vb">
+      <DependentUpon>TEMPFORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TEMPFORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Admin\Compras.resx">
+      <DependentUpon>Compras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\fmrRoles.resx">
+      <DependentUpon>fmrRoles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Gestion Local.resx">
+      <DependentUpon>Gestion Local.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Gestion Pisos.resx">
+      <DependentUpon>Gestion Pisos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Gestionar Inmuebles.resx">
+      <DependentUpon>Gestionar Inmuebles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Gestionar Personas.resx">
+      <DependentUpon>Gestionar Personas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\GestionarEmpleados.resx">
+      <DependentUpon>GestionarEmpleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\GestionClientes.resx">
+      <DependentUpon>GestionClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\GestionDeAlquileres.resx">
+      <DependentUpon>GestionDeAlquileres.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\GestionGaraje.resx">
+      <DependentUpon>GestionGaraje.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\GestionTipoUsuario.resx">
+      <DependentUpon>GestionTipoUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\GestionUsuarios.resx">
+      <DependentUpon>GestionUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\UsuariosRol.resx">
+      <DependentUpon>UsuariosRol.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bitacora.resx">
+      <DependentUpon>Bitacora.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente\DetallesCompra.resx">
+      <DependentUpon>DetallesCompra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente\GestionAlquileresPagos.resx">
+      <DependentUpon>GestionAlquileresPagos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente\MenuC.resx">
+      <DependentUpon>MenuC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente\PagoAlquiler.resx">
+      <DependentUpon>PagoAlquiler.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente\RealizarAlquiler.resx">
+      <DependentUpon>RealizarAlquiler.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente\RealizarCompra.resx">
+      <DependentUpon>RealizarCompra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Log In\Log In.resx">
+      <DependentUpon>Log In.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuA.resx">
+      <DependentUpon>MenuA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuAdmin.resx">
+      <DependentUpon>MenuAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuCliente.resx">
+      <DependentUpon>MenuCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MostrarInmuebleCompra.resx">
+      <DependentUpon>MostrarInmuebleCompra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TEMPFORM.resx">
+      <DependentUpon>TEMPFORM.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Admin\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Admin\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Admin\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="alquileres.xsc">
+      <DependentUpon>alquileres.xsd</DependentUpon>
+    </None>
+    <None Include="alquileres.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>alquileres1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="alquileres.xss">
+      <DependentUpon>alquileres.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
